@@ -19,3 +19,13 @@ else:
   print('Error')
 ```
 
+# Deleteing A Guild
+```py
+import requests
+
+r = requests.post('https://discordapp.com/api/v8/guilds/747317738988372068/delete', headers={'Authorization': "Token Here"})
+if r.status_code == 201:
+    print('Success')
+else:
+    print('Error')
+```    
