@@ -6,8 +6,8 @@
 import requests
 
 payload={
-  'channels': 'null'
-  'icon': 'null'
+  'channels': "null"
+  'icon': "null"
   'name': "Dropout's server"
   'region': "sydney"
 }
