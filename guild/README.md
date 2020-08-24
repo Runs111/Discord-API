@@ -6,10 +6,10 @@
 import requests
 
 payload={
-  channels: null
-  icon: null
-  name: "Dropout's server"
-  region: "sydney"
+  'channels': 'null'
+  'icon': 'null'
+  'name': "Dropout's server"
+  'region': "sydney"
 }
 
 r = requests.post('https://discordapp.com/api/v8/guilds', headers={'Authorization': "Token Here"}, data=payload)
