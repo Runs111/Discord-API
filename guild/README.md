@@ -23,7 +23,29 @@ else:
 ```py
 import requests
 
-r = requests.post('https://discordapp.com/api/v8/guilds/747317738988372068/delete', headers={'Authorization': "Token Here"})
+r = requests.post('https://discordapp.com/api/v8/guilds/GUILD_ID_HERE/delete', headers={'Authorization': "Token Here"})
+if r.status_code == 201:
+    print('Success')
+else:
+    print('Error')
+```    
+
+# Joining A Guild
+```py
+import requests
+
+r = requests.post('https://discordapp.com/api/v8/invites/discord-api', headers={'Authorization': "Token Here"})
+if r.status_code == 200:
+    print('Success')
+else:
+    print('Error')
+```
+
+# Leaving A Guild
+```py
+import requests
+
+r = requests.delete('https://discordapp.com/api/v8/users/@me/guilds/GUILD_ID_HERE', headers={'Authorization': "Token Here"})
 if r.status_code == 201:
     print('Success')
 else:
